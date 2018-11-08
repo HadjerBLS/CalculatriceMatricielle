@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="500.0" prefWidth="225.0">
+               <children>
+                  <Label text="Matrice A" />
+                  <GridPane alignment="TOP_CENTER" prefHeight="100.0" prefWidth="225.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="75.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="75.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="75.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="30.0" minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="30.0" minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="30.0" minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField />
+                        <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField alignment="CENTER" GridPane.columnIndex="1" />
+                        <TextField GridPane.columnIndex="2" />
+                        <TextField GridPane.rowIndex="1" />
+                        <TextField alignment="TOP_CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <Button mnemonicParsing="false" text="Transposée A" />
+                  <TextField alignment="CENTER" maxWidth="88.0" prefHeight="25.0" prefWidth="88.0" promptText="Multiplier par " />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="7.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="A + B" />
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="A - B" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="A * B" />
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin></VBox>
+            <VBox alignment="CENTER" prefHeight="500.0" prefWidth="225.0">
+               <children>
+                  <Label text="Matrice B" />
+                  <GridPane alignment="TOP_CENTER" prefHeight="100.0" prefWidth="225.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="75.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="75.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="75.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="30.0" minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="30.0" minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="30.0" minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField />
+                        <TextField alignment="CENTER" GridPane.columnIndex="1" />
+                        <TextField alignment="TOP_CENTER" GridPane.columnIndex="2" />
+                        <TextField GridPane.rowIndex="1" />
+                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField GridPane.rowIndex="2" />
+                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField alignment="TOP_CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <Button mnemonicParsing="false" text="Transposée B" />
+                  <TextField alignment="CENTER" maxWidth="88.0" promptText="Multiplier par" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
